@@ -1,0 +1,76 @@
+.container-geral-main {
+    background-color: whitesmoke;
+    width: 100vw;
+    height: 100vh;
+    max-width: 60rem;
+    min-width: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.container-geral-main button {
+    /* border: solid 0.1rem rgba(0, 0, 0, 0.2); */
+    width: 15rem;
+    /* height: 5rem; */
+    /* border-radius: 0.5rem; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    font-size: larger;
+}
+
+.blink-1 {
+    animation: blink-sequence 3s infinite both;
+    animation-delay: 0s;
+  }
+  
+  .blink-2 {
+    animation: blink-sequence 3s infinite both;
+    animation-delay: .5s;
+  }
+  
+  .blink-3 {
+    animation: blink-sequence 3s infinite both;
+    animation-delay: 1s;
+  }
+  
+  .blink-4 {
+    animation: blink-sequence 3s infinite both;
+    animation-delay: 1.5s;
+  }
+  
+  @keyframes blink-sequence {
+    0% {opacity: 0;}
+    25% {opacity: 1;}
+    100% {opacity: 0};
+  }
+
+.container-game-logo {
+    display: flex;
+    gap: 1rem;
+}
+
+.green-bar {
+    height: 20rem;
+    width: 3rem;
+    background-color: #8ac926;
+}
+.blue-bar {
+    height: 20rem;
+    width: 3rem;
+    background-color: #1982c4;
+}
+.red-bar {
+    height: 20rem;
+    width: 3rem;
+    background-color: #ff595e;
+}
+.yellow-bar {
+    height: 20rem;
+    width: 3rem;
+    background-color: #ffca3a;
+}

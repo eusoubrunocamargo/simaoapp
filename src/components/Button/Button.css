@@ -1,0 +1,36 @@
+.simon-button {
+    width: 100%;
+    height: 100%;
+}
+
+.activated {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+    pointer-events: none;
+}
+
+.simon-button[disabled]{
+    pointer-events: none;
+}
+
+.green {
+    background-color: #8ac926;
+    display: grid;
+    grid-column: 1;
+}
+
+.blue {
+    background-color: #1982c4;
+    grid-column: 2;
+}
+
+.red {
+    background-color: #ff595e;
+    grid-column: 3;
+}
+
+.yellow {
+    background-color: #ffca3a;
+    display: grid;
+    grid-column: 4;
+}
