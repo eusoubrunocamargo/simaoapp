@@ -19,7 +19,11 @@ export const useActivateButton = () => {
         if(mainRef.current){
             mainRef.current.style.pointerEvents = 'none';
             setActiveButton(color);
-            await soundFunctionsRef.current[color]();
+
+            const timeout = 300;
+            const timeoutPromise = new Promise((resolve) => setTimeout(resolve,timeout));
+            await Promise.race([soundFunctionsRef.current[color](), timeoutPromise]);
+            
             mainRef.current.style.pointerEvents = 'auto';
             setActiveButton(null);
         }
